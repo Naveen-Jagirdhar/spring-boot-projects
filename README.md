@@ -1,2 +1,2 @@
 # spring-boot-projects
-This repo is used for saving spring boot projects
+This repository contains different types of spring boot projects
