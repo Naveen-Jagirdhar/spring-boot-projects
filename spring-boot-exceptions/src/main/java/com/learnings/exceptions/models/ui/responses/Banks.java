@@ -6,6 +6,15 @@ public class Banks {
     private String bankName;
     private String bankId;
 
+    public Banks() {
+    }
+
+    public Banks(String bankNo, String bankName, String bankId) {
+        this.bankNo = bankNo;
+        this.bankName = bankName;
+        this.bankId = bankId;
+    }
+
     public String getBankNo() {
         return bankNo;
     }
