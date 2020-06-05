@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "504a28c2-95fa-4c02-a731-9d32fb32e3fb",
+		"name": "BankDomains",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"bankName\":\"SYNDICATE BANK\",\n  \"bankId\":\"17\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/banks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/banks/21212063-e6ea-47da-a4f2-f9d9bf53e346",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banks",
+						"21212063-e6ea-47da-a4f2-f9d9bf53e346"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/banks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT API",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"bankName\":\"SYNDICATE BANK\",\n  \"bankId\":\"17\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/banks/4174ea79-3891-46c0-adfb-777cdacbf9e0",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banks",
+						"4174ea79-3891-46c0-adfb-777cdacbf9e0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
